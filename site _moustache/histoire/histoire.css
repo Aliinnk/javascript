@@ -1,0 +1,223 @@
+header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+
+.header .menu {
+  padding: 0px;
+}
+
+.header .menu:hover {
+  background-color: transparent;
+}
+
+.logo {
+    display: flex;
+    width: auto;
+    height: 70px;
+    float: left;
+}
+
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+    transition-duration: 0.5s;
+  }
+
+h2 {
+    font-family: 'Unbounded', sans-serif;
+    float: right;
+}
+
+@media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+    body {
+      flex-direction: column;
+    }
+}
+
+.header-droite {
+  float: right;
+  padding-right: 35px;
+}
+
+.header-gauche {
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    padding-left: 35px;
+}
+
+.moustachemain {
+    height: auto;
+    width: 650px;
+    display: -webkit-box;
+    margin-left: auto;
+    display: flex;
+}
+
+h1 {
+    font-family: 'Unbounded', sans-serif;
+    color: white;
+    font-size: 80px;
+    margin-left: 80px;
+    transition-duration: 0.5s;
+}
+
+h1:hover{
+  font-size: 70px;
+  transition-duration: 0.5s;
+}
+
+body {
+    background-image: url("../images/gigamoustak.png");
+    background-position: bottom 70% right 50%;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    
+
+}
+
+p {
+    color:black;
+    font-family: 'Roboto', sans-serif;
+    max-width: 300px;
+    font-size: 17px;
+    padding: 30px;
+    float: right;
+    margin-left: 300px;
+    background-color: #ddd;
+    border-radius: 10px;
+    font-weight: 500;
+    transition-duration: 0.5s;
+}
+
+p:hover {
+  font-size: 20px;
+  transition-duration: 0.5s;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+  }
+
+@media screen and (max-width:2000px) {
+  h1{
+    font-size: 50px;
+  }
+
+  p {
+    margin-left: 0;
+    max-width: 500px;
+  }
+}
+
+
+@media screen and (max-width:1500px) {
+  h1{
+    font-size: 50px;
+  }
+
+  .principal {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  p {
+    margin-left: 0;
+    max-width: 500px;
+  }
+}
+
+.navbar {
+  padding: 15px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger-menu {
+  cursor: pointer;
+  display: none;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 850px) {
+  .header-droite{
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: block;
+    margin-left: 0%;
+    float: left;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    top: 10px;
+    height: auto;
+    width: 100%;
+    background-color: #333;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #666;
+  }
+}
